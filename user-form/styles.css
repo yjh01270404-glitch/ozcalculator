@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1::after {
+  content: "✨";
+  margin-left: 20px;
+}
+
+#registration-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+form p {
+  padding: 5px;
+}
+
+form > p {
+  border-bottom: 1px solid #eee;
+}
+
+form > p:last-child {
+  border-bottom: none;
+}
+
+.form-group::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #ddd;
+  margin-top: 10px;
+}
+
+.form-group:last-child::after {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+label[for="name"]::after,
+label[for="email"]::after,
+label[for="password"]::after {
+  content: " *";
+  color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover {
+  background-color: #0056b3;
+}
